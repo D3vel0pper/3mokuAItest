@@ -11,8 +11,8 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         BoardManager boardManager = new BoardManager();
-//        boardManager.run();
-        boardManager.test();
+        boardManager.run();
+//        boardManager.test();
     }
 
     /**
