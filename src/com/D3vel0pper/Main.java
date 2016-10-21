@@ -11,7 +11,8 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         BoardManager boardManager = new BoardManager();
-        boardManager.run();
+//        boardManager.run();
+        boardManager.test();
     }
 
     /**
@@ -101,6 +102,29 @@ public class Main {
         /**
          * Methods
          */
+
+//        public void test(){
+//            boardState[0] = 1;
+//            boardState[1] = 0;
+//            boardState[2] = 1;
+//            boardState[3] = 0;
+//            boardState[4] = 0;
+//            boardState[5] = 0;
+//            boardState[6] = 0;
+//            boardState[7] = 0;
+//            boardState[8] = 0;
+//
+//            printBoard();
+//
+//            Ai ai = new Ai(this);
+//            ai.setAiTurn(1);
+//            int isLeached = ai.isLeach();
+//            if(isLeached == -1){
+//                System.out.println("nothing leached");
+//            } else {
+//                System.out.println("if next is " + Integer.toString(isLeached) + ", game will over.");
+//            }
+//        }
 
         public BoardManager(){
             tern = 1;
@@ -463,6 +487,134 @@ public class Main {
         }
         public int getAiTurn(){
             return myTurn;
+        }
+
+        /**
+         * check board is leached or not
+         * @return : -1 -> not yet , other -> position that will finish game if the place be put
+         */
+        //空いている場所を探して、そこからたどるほうが楽な気がする。
+        public int isLeach(){
+            int iterator = 0;
+            for(;iterator < 9;iterator++) {
+                if(boardManager.checkState(boardManager.getBoardState()[iterator])){
+                    if(isRightLeach(iterator,myTurn)){
+                        return iterator;
+                    }
+                    if(isUnderLeach(iterator,myTurn)){
+                        return iterator;
+                    }
+                    if(isLeftLeach(iterator,myTurn)){
+                        return iterator;
+                    }
+                    if(isUpLeach(iterator,myTurn)){
+                        return iterator;
+                    }
+                    if(isCrossLeach(iterator,myTurn)){
+                        return iterator;
+                    }
+                    if(isBetweenLeach(iterator,myTurn)){
+                        return iterator;
+                    }
+                }
+            }
+            return -1;
+        }
+
+        private boolean isRightLeach(int startPosition, int checkTurn){
+            if(startPosition == 0 || startPosition == 3 || startPosition == 6){
+                if(boardManager.getBoardState()[startPosition + 1] == checkTurn &&
+                (boardManager.getBoardState()[startPosition + 1] == boardManager.getBoardState()[startPosition + 2])){
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private boolean isUnderLeach(int startPosition, int checkTurn){
+            if(startPosition == 0 || startPosition == 1 || startPosition == 2){
+                if(boardManager.getBoardState()[startPosition + 3] == checkTurn &&
+                        (boardManager.getBoardState()[startPosition + 3] == boardManager.getBoardState()[startPosition + 6])){
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private boolean isLeftLeach(int startPosition, int checkTurn){
+            if(startPosition == 2 || startPosition == 5 || startPosition == 8){
+                if(boardManager.getBoardState()[startPosition - 1] == checkTurn &&
+                        (boardManager.getBoardState()[startPosition - 1] == boardManager.getBoardState()[startPosition - 2])){
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private boolean isUpLeach(int startPosition, int checkTurn){
+            if(startPosition == 6 || startPosition == 7 || startPosition == 8){
+                if(boardManager.getBoardState()[startPosition - 3] == checkTurn &&
+                        (boardManager.getBoardState()[startPosition - 3] == boardManager.getBoardState()[startPosition - 6])){
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private boolean isCrossLeach(int startPosition, int checkTurn){
+            if(startPosition == 4){
+                if(boardManager.getBoardState()[startPosition - 4] == checkTurn &&
+                        (boardManager.getBoardState()[startPosition - 4] == boardManager.getBoardState()[startPosition + 4])){
+                    return true;
+                } else if(boardManager.getBoardState()[startPosition - 2] == checkTurn &&
+                        (boardManager.getBoardState()[startPosition - 2] == boardManager.getBoardState()[startPosition + 2])){
+                    return true;
+                }
+            } else if(startPosition == 0){
+                if(boardManager.getBoardState()[startPosition + 4] == checkTurn &&
+                        (boardManager.getBoardState()[startPosition + 4] == boardManager.getBoardState()[startPosition + 8])){
+                    return true;
+                }
+            } else if(startPosition == 2){
+                if(boardManager.getBoardState()[startPosition + 2] == checkTurn &&
+                        (boardManager.getBoardState()[startPosition + 2] == boardManager.getBoardState()[startPosition + 4])){
+                    return true;
+                }
+            } else if(startPosition == 6){
+                if(boardManager.getBoardState()[startPosition - 2] == checkTurn &&
+                        (boardManager.getBoardState()[startPosition - 2] == boardManager.getBoardState()[startPosition - 4])){
+                    return true;
+                }
+            } else if(startPosition == 8){
+                if(boardManager.getBoardState()[startPosition - 4] == checkTurn &&
+                        (boardManager.getBoardState()[startPosition - 4] == boardManager.getBoardState()[startPosition - 8])){
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private boolean isBetweenLeach(int startPosition, int checkTurn){
+            if(startPosition == 4){
+                if(boardManager.getBoardState()[startPosition + 1] == checkTurn &&
+                        (boardManager.getBoardState()[startPosition + 1] == boardManager.getBoardState()[startPosition - 1])){
+                    return true;
+                } else if(boardManager.getBoardState()[startPosition + 3] == checkTurn &&
+                        (boardManager.getBoardState()[startPosition + 3] == boardManager.getBoardState()[startPosition - 3])){
+                    return true;
+                }
+            } else if(startPosition == 1 || startPosition == 7){
+                if(boardManager.getBoardState()[startPosition + 1] == checkTurn &&
+                        (boardManager.getBoardState()[startPosition + 1] == boardManager.getBoardState()[startPosition - 1])){
+                    return true;
+                }
+            } else if(startPosition == 3 || startPosition == 5){
+                if(boardManager.getBoardState()[startPosition + 3] == checkTurn &&
+                        (boardManager.getBoardState()[startPosition + 3] == boardManager.getBoardState()[startPosition - 3])){
+                    return true;
+                }
+            }
+            return false;
         }
 
         /**

@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c935b63-22c3-4d66-b8b8-1f4c5132aaf7" name="Default" comment="" />
+    <list default="true" id="4c935b63-22c3-4d66-b8b8-1f4c5132aaf7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/3mokuAItest/com/D3vel0pper/Main$Ai$DoMinMax.class" afterPath="$PROJECT_DIR$/out/production/3mokuAItest/com/D3vel0pper/Main$Ai$DoMinMax.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/3mokuAItest/com/D3vel0pper/Main$Ai.class" afterPath="$PROJECT_DIR$/out/production/3mokuAItest/com/D3vel0pper/Main$Ai.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/3mokuAItest/com/D3vel0pper/Main$BoardManager.class" afterPath="$PROJECT_DIR$/out/production/3mokuAItest/com/D3vel0pper/Main$BoardManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/3mokuAItest/com/D3vel0pper/Main.class" afterPath="$PROJECT_DIR$/out/production/3mokuAItest/com/D3vel0pper/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/description.html" afterPath="$PROJECT_DIR$/.idea/description.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/project-template.xml" afterPath="$PROJECT_DIR$/.idea/project-template.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3mokuAItest.iml" afterPath="$PROJECT_DIR$/3mokuAItest.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/D3vel0pper/Main.java" afterPath="$PROJECT_DIR$/src/com/D3vel0pper/Main.java" />
+    </list>
     <ignored path="3mokuAItest.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,28 +39,64 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/D3vel0pper/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="692" column="0" selection-start-line="692" selection-start-column="0" selection-end-line="692" selection-end-column="0" />
+            <state relative-caret-position="34">
+              <caret line="105" column="10" selection-start-line="105" selection-start-column="10" selection-end-line="126" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#BoardManager#0;class#Main#0" expanded="false" />
-                <element signature="e#2176#2177#0" expanded="true" />
-                <element signature="e#2217#2218#0" expanded="true" />
+                <element signature="e#2251#2287#0" expanded="false" />
+                <element signature="method#run#0;class#BoardManager#0;class#Main#0" expanded="false" />
+                <element signature="method#desideTurn#0;class#BoardManager#0;class#Main#0" expanded="false" />
+                <element signature="method#inputPosition#0;class#BoardManager#0;class#Main#0" expanded="false" />
+                <element signature="method#printBoard#0;class#BoardManager#0;class#Main#0" expanded="false" />
+                <element signature="method#showBoardNumber#0;class#BoardManager#0;class#Main#0" expanded="false" />
+                <element signature="method#putStone#0;class#BoardManager#0;class#Main#0" expanded="false" />
+                <element signature="docComment;method#convertState#0;class#BoardManager#0;class#Main#0" expanded="false" />
+                <element signature="method#convertState#0;class#BoardManager#0;class#Main#0" expanded="false" />
+                <element signature="docComment;method#checkState#0;class#BoardManager#0;class#Main#0" expanded="false" />
+                <element signature="method#checkState#0;class#BoardManager#0;class#Main#0" expanded="false" />
+                <element signature="method#switchTurn#0;class#BoardManager#0;class#Main#0" expanded="false" />
+                <element signature="method#printResult#0;class#BoardManager#0;class#Main#0" expanded="false" />
+                <element signature="method#printDraw#0;class#BoardManager#0;class#Main#0" expanded="false" />
+                <element signature="e#9715#9746#0" expanded="false" />
+                <element signature="docComment;method#isGameOver#0;class#BoardManager#0;class#Main#0" expanded="false" />
+                <element signature="method#isGameOver#0;class#BoardManager#0;class#Main#0" expanded="false" />
                 <element signature="method#cheackHorizontal#0;class#BoardManager#0;class#Main#0" expanded="false" />
+                <element signature="method#checkVertical#0;class#BoardManager#0;class#Main#0" expanded="false" />
+                <element signature="method#checkCrossLine#0;class#BoardManager#0;class#Main#0" expanded="false" />
                 <element signature="docComment;method#checkIsBoardFull#0;class#BoardManager#0;class#Main#0" expanded="false" />
+                <element signature="method#checkIsBoardFull#0;class#BoardManager#0;class#Main#0" expanded="false" />
+                <element signature="method#runAi#0;class#BoardManager#0;class#Main#0" expanded="false" />
+                <element signature="method#Ai#0;class#Ai#0;class#Main#0" expanded="false" />
+                <element signature="e#14282#14325#0" expanded="false" />
+                <element signature="docComment;field#maxDepth#0;class#Ai#0;class#Main#0" expanded="false" />
+                <element signature="docComment;method#unDo#0;class#Ai#0;class#Main#0" expanded="false" />
+                <element signature="method#unDo#0;class#Ai#0;class#Main#0" expanded="false" />
+                <element signature="docComment;method#setAiTurn#0;class#Ai#0;class#Main#0" expanded="false" />
+                <element signature="method#isLeach#0;class#Ai#0;class#Main#0" expanded="false" />
+                <element signature="method#isRightLeach#0;class#Ai#0;class#Main#0" expanded="false" />
+                <element signature="method#isUnderLeach#0;class#Ai#0;class#Main#0" expanded="false" />
+                <element signature="method#isLeftLeach#0;class#Ai#0;class#Main#0" expanded="false" />
+                <element signature="method#isUpLeach#0;class#Ai#0;class#Main#0" expanded="false" />
+                <element signature="method#isCrossLeach#0;class#Ai#0;class#Main#0" expanded="false" />
+                <element signature="method#isBetweenLeach#0;class#Ai#0;class#Main#0" expanded="false" />
+                <element signature="docComment;method#decideNext#0;class#Ai#0;class#Main#0" expanded="false" />
+                <element signature="method#decideNext#0;class#Ai#0;class#Main#0" expanded="false" />
                 <element signature="method#desideTempNext#0;class#Ai#0;class#Main#0" expanded="false" />
                 <element signature="docComment;method#minMax#0;class#Ai#0;class#Main#0" expanded="false" />
                 <element signature="method#minMax#0;class#Ai#0;class#Main#0" expanded="false" />
-                <element signature="e#19043#19044#0" expanded="true" />
-                <element signature="e#19107#19108#0" expanded="true" />
-                <element signature="e#22140#22141#0" expanded="true" />
-                <element signature="e#22195#22196#0" expanded="true" />
+                <element signature="class#DoMinMax#0;class#Ai#0;class#Main#0" expanded="false" />
+                <element signature="method#minMax#0;class#DoMinMax#0;class#Ai#0;class#Main#0" expanded="false" />
+                <marker date="1477065733274" expanded="false" signature="3297:3640" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -412,7 +462,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47003156" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47003156" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -434,7 +484,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="141" />
+      <option name="time" value="148" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -450,39 +500,105 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#BoardManager#0;class#Main#0" expanded="false" />
-            <element signature="e#2176#2177#0" expanded="true" />
-            <element signature="e#2217#2218#0" expanded="true" />
+            <element signature="e#2251#2287#0" expanded="false" />
+            <element signature="method#run#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#desideTurn#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#inputPosition#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#printBoard#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#showBoardNumber#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#putStone#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="docComment;method#convertState#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#convertState#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="docComment;method#checkState#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#checkState#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#switchTurn#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#printResult#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#printDraw#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="e#9715#9746#0" expanded="false" />
+            <element signature="docComment;method#isGameOver#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#isGameOver#0;class#BoardManager#0;class#Main#0" expanded="false" />
             <element signature="method#cheackHorizontal#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#checkVertical#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#checkCrossLine#0;class#BoardManager#0;class#Main#0" expanded="false" />
             <element signature="docComment;method#checkIsBoardFull#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#checkIsBoardFull#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#runAi#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#Ai#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="e#14282#14325#0" expanded="false" />
+            <element signature="docComment;field#maxDepth#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="docComment;method#unDo#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="method#unDo#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="docComment;method#setAiTurn#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="method#isLeach#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="method#isRightLeach#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="method#isUnderLeach#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="method#isLeftLeach#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="method#isUpLeach#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="method#isCrossLeach#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="method#isBetweenLeach#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="docComment;method#decideNext#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="method#decideNext#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="method#desideTempNext#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="docComment;method#minMax#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="method#minMax#0;class#Ai#0;class#Main#0" expanded="false" />
-            <element signature="e#19043#19044#0" expanded="true" />
-            <element signature="e#19107#19108#0" expanded="true" />
-            <element signature="e#22140#22141#0" expanded="true" />
-            <element signature="e#22195#22196#0" expanded="true" />
+            <element signature="class#DoMinMax#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="method#minMax#0;class#DoMinMax#0;class#Ai#0;class#Main#0" expanded="false" />
+            <marker date="1477065733274" expanded="false" signature="3297:3640" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/D3vel0pper/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="692" column="0" selection-start-line="692" selection-start-column="0" selection-end-line="692" selection-end-column="0" />
+        <state relative-caret-position="34">
+          <caret line="105" column="10" selection-start-line="105" selection-start-column="10" selection-end-line="126" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#BoardManager#0;class#Main#0" expanded="false" />
-            <element signature="e#2176#2177#0" expanded="true" />
-            <element signature="e#2217#2218#0" expanded="true" />
+            <element signature="e#2251#2287#0" expanded="false" />
+            <element signature="method#run#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#desideTurn#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#inputPosition#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#printBoard#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#showBoardNumber#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#putStone#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="docComment;method#convertState#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#convertState#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="docComment;method#checkState#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#checkState#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#switchTurn#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#printResult#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#printDraw#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="e#9715#9746#0" expanded="false" />
+            <element signature="docComment;method#isGameOver#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#isGameOver#0;class#BoardManager#0;class#Main#0" expanded="false" />
             <element signature="method#cheackHorizontal#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#checkVertical#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#checkCrossLine#0;class#BoardManager#0;class#Main#0" expanded="false" />
             <element signature="docComment;method#checkIsBoardFull#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#checkIsBoardFull#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#runAi#0;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="method#Ai#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="e#14282#14325#0" expanded="false" />
+            <element signature="docComment;field#maxDepth#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="docComment;method#unDo#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="method#unDo#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="docComment;method#setAiTurn#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="method#isLeach#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="method#isRightLeach#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="method#isUnderLeach#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="method#isLeftLeach#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="method#isUpLeach#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="method#isCrossLeach#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="method#isBetweenLeach#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="docComment;method#decideNext#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="method#decideNext#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="method#desideTempNext#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="docComment;method#minMax#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="method#minMax#0;class#Ai#0;class#Main#0" expanded="false" />
-            <element signature="e#19043#19044#0" expanded="true" />
-            <element signature="e#19107#19108#0" expanded="true" />
-            <element signature="e#22140#22141#0" expanded="true" />
-            <element signature="e#22195#22196#0" expanded="true" />
+            <element signature="class#DoMinMax#0;class#Ai#0;class#Main#0" expanded="false" />
+            <element signature="method#minMax#0;class#DoMinMax#0;class#Ai#0;class#Main#0" expanded="false" />
+            <marker date="1477065733274" expanded="false" signature="3297:3640" ph="{...}" />
           </folding>
         </state>
       </provider>
