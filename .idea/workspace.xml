@@ -40,11 +40,13 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/D3vel0pper/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+            <state relative-caret-position="1600">
+              <caret line="840" column="34" selection-start-line="767" selection-start-column="16" selection-end-line="840" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#BoardManager#0;class#Main#0" expanded="false" />
+                <element signature="e#2207#2208#0" expanded="true" />
+                <element signature="e#2248#2249#0" expanded="true" />
                 <element signature="e#2251#2287#0" expanded="false" />
                 <element signature="method#run#0;class#BoardManager#0;class#Main#0" expanded="false" />
                 <element signature="method#desideTurn#0;class#BoardManager#0;class#Main#0" expanded="false" />
@@ -74,7 +76,6 @@
                 <element signature="docComment;method#unDo#0;class#Ai#0;class#Main#0" expanded="false" />
                 <element signature="method#unDo#0;class#Ai#0;class#Main#0" expanded="false" />
                 <element signature="docComment;method#setAiTurn#0;class#Ai#0;class#Main#0" expanded="false" />
-                <element signature="method#isLeach#0;class#Ai#0;class#Main#0" expanded="false" />
                 <element signature="method#isRightLeach#0;class#Ai#0;class#Main#0" expanded="false" />
                 <element signature="method#isUnderLeach#0;class#Ai#0;class#Main#0" expanded="false" />
                 <element signature="method#isLeftLeach#0;class#Ai#0;class#Main#0" expanded="false" />
@@ -82,13 +83,10 @@
                 <element signature="method#isCrossLeach#0;class#Ai#0;class#Main#0" expanded="false" />
                 <element signature="method#isBetweenLeach#0;class#Ai#0;class#Main#0" expanded="false" />
                 <element signature="docComment;method#decideNext#0;class#Ai#0;class#Main#0" expanded="false" />
-                <element signature="method#decideNext#0;class#Ai#0;class#Main#0" expanded="false" />
                 <element signature="method#desideTempNext#0;class#Ai#0;class#Main#0" expanded="false" />
                 <element signature="docComment;method#minMax#0;class#Ai#0;class#Main#0" expanded="false" />
                 <element signature="method#minMax#0;class#Ai#0;class#Main#0" expanded="false" />
-                <element signature="class#DoMinMax#0;class#Ai#0;class#Main#0" expanded="false" />
-                <element signature="method#minMax#0;class#DoMinMax#0;class#Ai#0;class#Main#0" expanded="false" />
-                <marker date="1477067051519" expanded="false" signature="3297:3640" ph="{...}" />
+                <marker date="1477068465522" expanded="false" signature="3297:3640" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -485,7 +483,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="148" />
+      <option name="time" value="151" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -501,6 +499,8 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="e#2207#2208#0" expanded="true" />
+            <element signature="e#2248#2249#0" expanded="true" />
             <element signature="e#2251#2287#0" expanded="false" />
             <element signature="method#run#0;class#BoardManager#0;class#Main#0" expanded="false" />
             <element signature="method#desideTurn#0;class#BoardManager#0;class#Main#0" expanded="false" />
@@ -530,7 +530,6 @@
             <element signature="docComment;method#unDo#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="method#unDo#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="docComment;method#setAiTurn#0;class#Ai#0;class#Main#0" expanded="false" />
-            <element signature="method#isLeach#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="method#isRightLeach#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="method#isUnderLeach#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="method#isLeftLeach#0;class#Ai#0;class#Main#0" expanded="false" />
@@ -538,24 +537,23 @@
             <element signature="method#isCrossLeach#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="method#isBetweenLeach#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="docComment;method#decideNext#0;class#Ai#0;class#Main#0" expanded="false" />
-            <element signature="method#decideNext#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="method#desideTempNext#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="docComment;method#minMax#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="method#minMax#0;class#Ai#0;class#Main#0" expanded="false" />
-            <element signature="class#DoMinMax#0;class#Ai#0;class#Main#0" expanded="false" />
-            <element signature="method#minMax#0;class#DoMinMax#0;class#Ai#0;class#Main#0" expanded="false" />
-            <marker date="1477067051519" expanded="false" signature="3297:3640" ph="{...}" />
+            <marker date="1477068465522" expanded="false" signature="3297:3640" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/D3vel0pper/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        <state relative-caret-position="1600">
+          <caret line="840" column="34" selection-start-line="767" selection-start-column="16" selection-end-line="840" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#BoardManager#0;class#Main#0" expanded="false" />
+            <element signature="e#2207#2208#0" expanded="true" />
+            <element signature="e#2248#2249#0" expanded="true" />
             <element signature="e#2251#2287#0" expanded="false" />
             <element signature="method#run#0;class#BoardManager#0;class#Main#0" expanded="false" />
             <element signature="method#desideTurn#0;class#BoardManager#0;class#Main#0" expanded="false" />
@@ -585,7 +583,6 @@
             <element signature="docComment;method#unDo#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="method#unDo#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="docComment;method#setAiTurn#0;class#Ai#0;class#Main#0" expanded="false" />
-            <element signature="method#isLeach#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="method#isRightLeach#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="method#isUnderLeach#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="method#isLeftLeach#0;class#Ai#0;class#Main#0" expanded="false" />
@@ -593,13 +590,10 @@
             <element signature="method#isCrossLeach#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="method#isBetweenLeach#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="docComment;method#decideNext#0;class#Ai#0;class#Main#0" expanded="false" />
-            <element signature="method#decideNext#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="method#desideTempNext#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="docComment;method#minMax#0;class#Ai#0;class#Main#0" expanded="false" />
             <element signature="method#minMax#0;class#Ai#0;class#Main#0" expanded="false" />
-            <element signature="class#DoMinMax#0;class#Ai#0;class#Main#0" expanded="false" />
-            <element signature="method#minMax#0;class#DoMinMax#0;class#Ai#0;class#Main#0" expanded="false" />
-            <marker date="1477067051519" expanded="false" signature="3297:3640" ph="{...}" />
+            <marker date="1477068465522" expanded="false" signature="3297:3640" ph="{...}" />
           </folding>
         </state>
       </provider>

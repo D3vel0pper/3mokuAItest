@@ -496,24 +496,25 @@ public class Main {
         //空いている場所を探して、そこからたどるほうが楽な気がする。
         public int isLeach(){
             int iterator = 0;
+            int tergetTurn = myTurn * -1;
             for(;iterator < 9;iterator++) {
                 if(boardManager.checkState(boardManager.getBoardState()[iterator])){
-                    if(isRightLeach(iterator,myTurn)){
+                    if(isRightLeach(iterator,tergetTurn)){
                         return iterator;
                     }
-                    if(isUnderLeach(iterator,myTurn)){
+                    if(isUnderLeach(iterator,tergetTurn)){
                         return iterator;
                     }
-                    if(isLeftLeach(iterator,myTurn)){
+                    if(isLeftLeach(iterator,tergetTurn)){
                         return iterator;
                     }
-                    if(isUpLeach(iterator,myTurn)){
+                    if(isUpLeach(iterator,tergetTurn)){
                         return iterator;
                     }
-                    if(isCrossLeach(iterator,myTurn)){
+                    if(isCrossLeach(iterator,tergetTurn)){
                         return iterator;
                     }
-                    if(isBetweenLeach(iterator,myTurn)){
+                    if(isBetweenLeach(iterator,tergetTurn)){
                         return iterator;
                     }
                 }
@@ -623,25 +624,33 @@ public class Main {
          */
         public int decideNext(){
             int nextPosition;
-//            if(boardManager.getBoardState()[4] == 0){
-//                nextPosition = 4;
-//            }else {
+            if(boardManager.getBoardState()[4] == 0){
+                nextPosition = 4;
+            }
+//            else {
 //                nextPosition = minMax(myTurn * -1, 0);
 //            }
 //            nextPosition = minMax(myTurn * -1, 0);
-            DoMinMax doMinMax = new DoMinMax(myTurn,tempMaxDepth);
-            doMinMax.start();
-            try {
-                doMinMax.join();
-                nextPosition = doMinMax.getReturnValue();
-                if(nextPosition < 0 || nextPosition > 8){
-                    return -1;
+            else {
+                nextPosition = isLeach();
+            }
+            if(nextPosition != -1){
+                return nextPosition;
+            } else {
+                DoMinMax doMinMax = new DoMinMax(myTurn, tempMaxDepth);
+                doMinMax.start();
+                try {
+                    doMinMax.join();
+                    nextPosition = doMinMax.getReturnValue();
+                    if (nextPosition < 0 || nextPosition > 8) {
+                        return -1;
+                    }
+                    if (boardManager.checkState(boardManager.boardState[nextPosition])) {
+                        return nextPosition;
+                    }
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
-                if(boardManager.checkState(boardManager.boardState[nextPosition])){
-                    return nextPosition;
-                }
-            } catch (InterruptedException e){
-                e.printStackTrace();
             }
 //            if(boardManager.checkState(boardManager.boardState[nextPosition])){
 //                    return nextPosition;
@@ -765,7 +774,7 @@ public class Main {
                 if(depth != maxDepth) {
                     if (boardManager.isGameOver()) {
                         //if before this, is myTurn
-                        if (turn == myTurn) {
+                        if (turn * -1 == myTurn) {
 //                            evaValList.add(10 - depth);
                             return 10 - depth;
                         } else {
